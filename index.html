@@ -24,12 +24,12 @@
 
     body {
       font-family: "Manrope", system-ui, sans-serif;
-  background-color: var(--bg);
-  background-image: radial-gradient(rgba(0, 0, 0, 0.07) 1px, transparent 1px);
-  background-size: 28px 28px;
-  color: var(--text);
-  line-height: 1.6;
-  font-size: 16px;
+      background-color: var(--bg);
+      background-image: radial-gradient(rgba(0, 0, 0, 0.07) 1px, transparent 1px);
+      background-size: 28px 28px;
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 16px;
     }
 
     a { color: inherit; text-decoration: none; }
@@ -62,7 +62,7 @@
     }
     
     .header__logo {
-  margin-left: 12%;
+      margin-left: 12%;
     }
 
     .header__nav {
@@ -144,17 +144,17 @@
 
     .slider__arrow {
       width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255,255,255,0.25);
-  color: #fff;
-  font-size: 1.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.25s;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #fff;
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s;
     }
 
     .slider__arrow:hover { background: rgba(0,0,0,0.45); }
@@ -338,8 +338,9 @@
       </a>
       <nav class="header__nav" aria-label="Разделы сайта">
         <a href="#company">Компания</a>
-        <a href="#products">Продукция</a>
+        <a href="#products">Манипуляторы</a>
         <a href="#services">Услуги</a>
+        <a href="#oils-coolants">Масла и СОЖ</a> <!-- Добавлен новый пункт меню -->
         <a href="#contacts">Контакты</a>
       </nav>
       <div></div><!-- баланс сетки -->
@@ -383,9 +384,9 @@
       </div>
     </section>
 
-    <!-- 5. Продукция -->
+    <!-- 5. Продукция (Манипуляторы) -->
     <section id="products">
-      <h2 class="section-title">Продукция</h2>
+      <h2 class="section-title">Манипуляторы</h2>
       <div class="product-cards">
 
         <article class="product-card">
@@ -431,7 +432,39 @@
       </div>
     </section>
 
-    <!-- 7. Контакты -->
+    <!-- 7. НОВЫЙ РАЗДЕЛ: Ассортимент базовых масел и СОЖ -->
+    <section id="oils-coolants">
+      <h2 class="section-title">Ассортимент базовых масел и СОЖ</h2>
+      <div class="product-cards">
+        
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="oil.png" alt="Базовые масла в бочках" />
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Базовые масла</h3>
+            <p class="product-card__specs">Базовые масла ведущих российских производителей для производства смазочных материалов
+Мы предлагаем марки:
+SN80, SN150, SN150, SN350</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="coolant.png" alt="Пакеты присадок FanChu Chemical" />
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Пакеты присадок и СОЖ</h3>
+            <p class="product-card__specs">Пакеты присадок – готовые химические смеси для производства смазочно-охлаждающих жидкостей
+Мы предлагаем марки:
+FanChu S100, S120, S120-A, S121 и другие</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 8. Контакты -->
     <section id="contacts">
       <h2 class="section-title">Контакты</h2>
       <div class="contacts-block">
